@@ -1,0 +1,25 @@
+#quad3 {
+    background-image: url('../../assets/quad3bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#quad3 span {
+    background-image: url('../../assets/autumnleaves.png');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    left: -30px;
+    bottom: -10px;
+}

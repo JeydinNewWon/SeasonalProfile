@@ -1,0 +1,27 @@
+#quad2 {
+    background-image: url('../../assets/quad2bg.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: bottom center;
+}
+
+#quad2 span {
+    background-image: url('../../assets/branch.png');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    background-position: bottom right;
+    display: block;
+    width: 23%;
+    height: 26%;
+    position: absolute;
+    right: -3%;
+    top: -9%;
+}

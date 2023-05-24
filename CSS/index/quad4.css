@@ -1,0 +1,23 @@
+#quad4 {
+    background-image: url('../../assets/quad4bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#quad4 span {
+    background-image: url('../../assets/snowflakes.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    transform: rotate(180deg);
+    background-size: cover;
+    display: block;
+    width: 37%;
+    height: 25%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
