@@ -25,3 +25,15 @@
     right: -3%;
     top: -9%;
 }
+
+#quad2 .button {
+    color: #42da9f;
+
+}
+
+#quad2 .button:hover {
+    color: white;
+    background-color: #42da9f;
+}
+
+

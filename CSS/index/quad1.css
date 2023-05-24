@@ -26,3 +26,12 @@
     left: 0;
     top: 0;
 }
+
+#quad1 .button {
+    color: #ff739a;
+}
+
+#quad1 .button:hover {
+    background-color: #ff739a;
+    color: white;
+}
