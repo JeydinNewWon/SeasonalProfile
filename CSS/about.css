@@ -1,0 +1,18 @@
+@import url('./page.css');
+
+.navbar {
+    background-color: #ff739a;
+}
+
+body {
+    display: block;
+    background-image: url('../assets/4248019.jpg');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.infocontainer {
+    background-color: rgba(255, 115, 154, 0.65);
+}

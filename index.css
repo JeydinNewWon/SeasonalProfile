@@ -4,38 +4,7 @@
 @import url('CSS/index/quad2.css');
 @import url('CSS/index/quad3.css');
 @import url('CSS/index/quad4.css');
-
-
-@keyframes fall {
-    0% {
-        opacity: 0.25;
-    }
-    50% {
-        opacity: 0.95;
-    }
-    100% {
-        top: 100vh;
-        opacity: 1;
-    }
-}
-  
-@keyframes sway {
-    0% {
-        margin-left: 0;
-    }
-    25% {
-        margin-left: 50px;
-    }
-    50% {
-        margin-left: -50px;
-    }
-    75% {
-        margin-left: 50px;
-    }
-    100% {
-        margin-left: 0;
-    }
-}
+@import url('./CSS/effects.css');
 
 html, body {
     padding: 0;
@@ -85,24 +54,6 @@ html, body {
     box-shadow: 0px 5.5px 4.2px rgba(0,0,0,0.38);
 }
 
-.effectcontainer {
-    overflow: hidden;
-    transition: opacity 500ms;
-    height: 50%;
-    width: 50%;
-    position: absolute;
-}
-
-.effectElement {
-    position: absolute;
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    animation: fall ease-in infinite, sway ease-in-out infinite;
-}
-
 #loadwrapper {
     position: absolute;
     display: flex;
@@ -121,7 +72,3 @@ html, body {
     align-items: center;
 }
 
-.aLeaf, .sLeaf, .cBlossom {
-    display: block;
-    background-size: cover;
-}
