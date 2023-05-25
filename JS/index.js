@@ -9,8 +9,8 @@ const random = (num) => {
 const getRandomStyles = () => {
   const top = random(100);
   const left = random(100);
-  const dur = random(10) + 10;
-  const size = random(25) + 25;
+  const dur = random(10) + 5;
+  const size = random(25) + 13;
   return `
     top: -${top}%;
     left: ${left}%;
@@ -73,7 +73,6 @@ function snowEvents() {
 
     quad4.addEventListener('mouseenter', () => {
         createSnow(30);
-        setTimeout(removeSnow, (1000 * 60));
     });
 
     quad4.addEventListener('mouseleave', () => {
@@ -87,7 +86,6 @@ function autumnLeavesEvents() {
 
     quad3.addEventListener('mouseenter', () => {
         createAutumnLeaves(30);
-        setTimeout(removeAutumnLeaves, (1000 * 60));
     });
 
     quad3.addEventListener('mouseleave', () => {
