@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 @import url('CSS/index/quad1.css');
 @import url('CSS/index/quad2.css');
 @import url('CSS/index/quad3.css');
 @import url('CSS/index/quad4.css');
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 
 @keyframes fall {
     0% {
         opacity: 0.25;
     }
     50% {
-        opacity: 0.9;
+        opacity: 0.95;
     }
     100% {
         top: 100vh;
-        opacity: 0.9;
+        opacity: 1;
     }
 }
   
@@ -117,4 +119,9 @@ html, body {
     justify-content: center;
     font-size: x-large;
     align-items: center;
+}
+
+.aLeaf, .sLeaf, .cBlossom {
+    display: block;
+    background-size: cover;
 }
