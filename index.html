@@ -3,9 +3,14 @@
     <head>
         <title>Jayden's Profile!</title>
         <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <script src="./JS/index.js"></script>
     </head>
     <body>
+        <div id="loadwrapper">
+            <h1>Loading...</h1>
+
+        </div>
         <div class="quadrant" id="quad1">
             <span id="quad1feature"></span>
             <a href="about.html" class="button">About Me</a>
@@ -15,11 +20,12 @@
             <a href="about.html" class="button">Projects</a>
         </div>
         <div  class="quadrant" id="quad3">
+            <div id="autumnleavescontainer" class="effectcontainer"></div>
             <span id="quad3feature"></span>
             <a href="about.html" class="button">Games List</a>
         </div>
         <div  class="quadrant" id="quad4">
-            <div id="snowcontainer"></div>
+            <div id="snowcontainer" class="effectcontainer"></div>
             <span id="quad4feature"></span>
             <a href="about.html" class="button">Contact</a>
         </div>

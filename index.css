@@ -2,14 +2,11 @@
 @import url('CSS/index/quad2.css');
 @import url('CSS/index/quad3.css');
 @import url('CSS/index/quad4.css');
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 @keyframes fall {
     0% {
-        opacity: 0.3;
+        opacity: 0.1;
     }
     50% {
         opacity: 1;
@@ -41,8 +38,8 @@
 html, body {
     padding: 0;
     margin: 0;
-    height: 100%;
-    min-height: 100%;
+    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -84,4 +81,40 @@ html, body {
 
 .button:hover {
     box-shadow: 0px 5.5px 4.2px rgba(0,0,0,0.38);
+}
+
+.effectcontainer {
+    overflow: hidden;
+    transition: opacity 500ms;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+}
+
+.effectElement {
+    position: absolute;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    animation: fall ease-in infinite, sway ease-in-out infinite;
+}
+
+#loadwrapper {
+    position: absolute;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    background-color: navy;
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    font-family: 'Silkscreen', sans-serif;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    font-size: x-large;
+    align-items: center;
 }

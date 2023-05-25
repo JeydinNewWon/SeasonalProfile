@@ -1,5 +1,6 @@
 let snowContainer;
 const snowContent = ['&#10052', '&#10053', '&#10054'];
+const autumnLeavesContent = ['&#127809;', '&#127810;'];
 
 const random = (num) => {
   return Math.floor(Math.random() * num);
@@ -21,11 +22,30 @@ const getRandomStyles = () => {
 const createSnow = (num) => {
   for (var i = num; i > 0; i--) {
     var snow = document.createElement("div");
-    snow.className = "snow";
+    snow.className = "snow effectElement";
     snow.style.cssText = getRandomStyles();
-    snow.innerHTML = snowContent[random(3)];
+    snow.innerHTML = snowContent[random(snowContent.length)];
     snowContainer.append(snow);
   }
+}
+
+function createAutumnLeaves(num) {
+    for (let i = num; i > 0; i--) {
+        var aLeaf = document.createElement("div");
+        aLeaf.className = "aLeaf effectElement";
+        aLeaf.style.cssText = getRandomStyles();
+        aLeaf.innerHTML = autumnLeavesContent[random(autumnLeavesContent.length)];
+        $('#autumnleavescontainer').append(aLeaf);
+    }
+}
+
+function removeAutumnLeaves() {
+    setTimeout(() => {
+        const aLeaves = document.querySelectorAll('.aLeaf');
+        for (const aL of aLeaves) {
+            aL.remove();
+        }
+    }, 200);
 }
 
 const removeSnow = () => {
@@ -38,10 +58,16 @@ const removeSnow = () => {
 }
 
 window.addEventListener("load", () => {
+    $('#loadwrapper').fadeOut(2500, () => {
+        $('#loadwrapper').remove();
+    });
     snowContainer = document.getElementById("snowcontainer");
     snowEvents();
+    autumnLeavesEvents();
 
 });
+
+
 function snowEvents() {
     const quad4 = document.getElementById("quad4");
 
@@ -54,4 +80,17 @@ function snowEvents() {
         removeSnow();
     });
 
+}
+
+function autumnLeavesEvents() {
+    const quad3 = document.getElementById("quad3");
+
+    quad3.addEventListener('mouseenter', () => {
+        createAutumnLeaves(30);
+        setTimeout(removeAutumnLeaves, (1000 * 60));
+    });
+
+    quad3.addEventListener('mouseleave', () => {
+        removeAutumnLeaves();
+    });
 }
