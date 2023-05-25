@@ -6,6 +6,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    flex-wrap: nowrap;
 }
 
 #quad4 span {
@@ -20,4 +21,32 @@
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+#quad4 .button {
+    color: #68cedd;
+}
+
+#quad4 .button:hover {
+    background-color: #68cedd;
+    color: white;
+}
+
+#snowcontainer {  
+    overflow: hidden;
+    transition: opacity 500ms;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+}
+  
+.snow {
+    animation: fall ease-in infinite, sway ease-in-out infinite;
+    color: skyblue;
+    position: absolute;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

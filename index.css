@@ -7,6 +7,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
+@keyframes fall {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: 100vh;
+        opacity: 1;
+    }
+}
+  
+@keyframes sway {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 50px;
+    }
+    50% {
+        margin-left: -50px;
+    }
+    75% {
+        margin-left: 50px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -43,14 +74,14 @@ html, body {
     transition-duration: .4s, .4s;
     transition-timing-function: ease-in-out;
     padding-top: 6px;
-    padding-left: 16.5px !important;
-    padding-right: 16.5px !important;
+    padding-left: 15px !important;
+    padding-right: 12px !important;
     padding-bottom: 10px;
-    border-radius: 2px;
+    border-radius: 4px;
     text-shadow: 0px 5.5px 3.5px rgba(0,0,0,0.25);
+    z-index: 1;
 }
 
 .button:hover {
     box-shadow: 0px 5.5px 4.2px rgba(0,0,0,0.38);
-
 }
