@@ -19,6 +19,7 @@ body {
     font-size: large;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .navbar a {
