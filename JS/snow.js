@@ -1,18 +1,18 @@
-import { getRandomStyles, random } from ".";
+import { getRandomStyles, random } from "./random.js";
 
 const snowContent = ['&#10052', '&#10053', '&#10054'];
 
-export const createSnow = (num) => {
+export function createSnow(num) {
     for (var i = num; i > 0; i--) {
-      var snow = document.createElement("div");
-      snow.className = "snow";
-      snow.style.cssText = getRandomStyles();
-      snow.innerHTML = snowContent[random(3)];
-      snowContainer.append(snow);
+        var snow = document.createElement("div");
+        snow.className = "snow effectElement";
+        snow.style.cssText = getRandomStyles();
+        snow.innerHTML = snowContent[random(snowContent.length)];
+        $('#snowcontainer').append(snow);
     }
   }
   
-export const removeSnow = () => {
+export function removeSnow() {
     setTimeout(() => {
         const snow = document.querySelectorAll('.snow');
         for (const s of snow) {
@@ -21,16 +21,11 @@ export const removeSnow = () => {
     }, 200);
 }
 
-export function snowEvents() {
-    const quad4 = document.getElementById("quad4");
+function snowEvents(idString) {
+    const e = document.getElementById(idString);
 
-    quad4.addEventListener('mouseenter', () => {
+    e.addEventListener('mouseenter', () => {
         createSnow(30);
         setTimeout(removeSnow, (1000 * 60));
     });
-
-    quad4.addEventListener('mouseleave', () => {
-        removeSnow();
-    });
-
 }

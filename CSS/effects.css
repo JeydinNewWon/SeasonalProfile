@@ -45,6 +45,9 @@
     -ms-user-select: none;
     user-select: none;
     animation: fall ease-in infinite, sway ease-in-out infinite;
+    -webkit-animation: fall ease-in infinite, sway ease-in-out infinite;
+    -moz-animation: fall ease-in infinite, sway ease-in-out infinite;
+    -o-animation: fall ease-in infinite, sway ease-in-out infinite;
 }
 
 .aLeaf, .sLeaf, .cBlossom {
