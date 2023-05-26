@@ -6,9 +6,9 @@
 
 body {
     display: block;
-    background-image: url('../assets/4248019.jpg');
+    background-image: url('../assets/aboutbg.jpg');
     background-size: cover;
-    background-position: top right;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
