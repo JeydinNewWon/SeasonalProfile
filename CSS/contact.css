@@ -37,3 +37,26 @@ body {
 .snow {
     color: skyblue;
 }
+
+#contactscontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#contactscontainer a {
+    max-width: 33%;
+    display: block;
+    z-index: 3;
+}
+
+#contactscontainer img {
+    display: block;
+    height: 200px;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
