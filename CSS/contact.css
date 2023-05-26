@@ -55,7 +55,6 @@ body {
     z-index: 3;
     font-size: 20px;
     text-decoration: none;
-    color: #fff;
 }
 
 #contactscontainer img {
@@ -67,7 +66,7 @@ body {
 }
 
 .hovermsg {
-    display: none;
+    color: transparent;
 }
 #contactscontainer img:hover .hovermsg {
     display: inline;
