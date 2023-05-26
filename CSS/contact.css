@@ -1,0 +1,39 @@
+@import url('./page.css');
+
+.navbar {
+    background-color: #68cedd;
+}
+
+body {
+    display: block;
+    background-image: url('../assets/contactbg.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.infocontainer {
+    background-color: rgba(104, 206, 221, 0.65);
+}
+
+#effectoption {
+    font-size: 55px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: skyblue;
+}
+
+#listcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#listcontainer ul {
+    max-width: 45%;
+}
+
+.snow {
+    color: skyblue;
+}
