@@ -1,0 +1,31 @@
+@import url(projects.css);
+
+.navbar {
+    background-color: #f88336;
+}
+
+body {
+    display: block;
+    background-image: url('../assets/20022809_6223809.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.infocontainer {
+    background-color: rgba(248, 131, 54, 0.65);
+}
+
+#effectoption {
+    background-image: url('../assets/sprites/fallen_leaf_sprite.png');
+}
+
+#listcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#listcontainer ul {
+    max-width: 45%;
+}
