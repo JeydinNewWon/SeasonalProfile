@@ -1,0 +1,48 @@
+@import url('./page.css');
+
+.navbar {
+    background-color: #42da9f;
+}
+
+body {
+    display: block;
+    background-image: url('../assets/projectsbg.jpg');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.infocontainer {
+    background-color: rgba(66, 218, 159, 0.65);
+}
+
+#effectoption {
+    background-image: url('../assets/sprites/flower_sprite.png');
+}
+
+#listcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#listcontainer ul {
+    max-width: 45%;
+}
+
+.projectcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.projectcontainer img {
+    max-width: 31%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
