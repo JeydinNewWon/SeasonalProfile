@@ -51,7 +51,11 @@ body {
 #contactscontainer a {
     max-width: 33%;
     display: block;
+    text-align: center;
     z-index: 3;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
 }
 
 #contactscontainer img {
@@ -59,4 +63,12 @@ body {
     height: 200px;
     background-repeat: no-repeat;
     z-index: 3;
+    margin-bottom: 30px;
+}
+
+.hovermsg {
+    display: none;
+}
+#contactscontainer img:hover .hovermsg {
+    display: inline;
 }

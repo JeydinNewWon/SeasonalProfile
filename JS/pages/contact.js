@@ -19,6 +19,11 @@ window.addEventListener("load", () => {
         $('#loadwrapper').remove();
     });
 
+    $('#contactscontainer img').on('mouseenter', () => {
+        $(this).siblings().css('display', 'inline');
+        console.log($(this));
+    });
+
     createSnow(30);
 
     $('#effectoption').on('click', () => {

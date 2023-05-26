@@ -81,6 +81,7 @@ body {
 ul li {
     position: relative;
 }
+
 h1, h2, h3, p, ul li {
     z-index: 2;
 }
