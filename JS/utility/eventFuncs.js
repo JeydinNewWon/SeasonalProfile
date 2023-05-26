@@ -1,7 +1,7 @@
-import { createAutumnLeaves, removeAutumnLeaves } from "./autumnleaves.js";
-import { createBlossoms, removeBlossoms } from "./blossom.js";
-import { createSnow, removeSnow } from "./snow.js";
-import { createSummerLeaves, removeSummerLeaves } from "./summerleaves.js";
+import { createAutumnLeaves, removeAutumnLeaves } from "../effects/autumnleaves.js";
+import { createBlossoms, removeBlossoms } from "../effects/blossom.js";
+import { createSnow, removeSnow } from "../effects/snow.js";
+import { createSummerLeaves, removeSummerLeaves } from "../effects/summerleaves.js";
 
 export function eventRegister(idString, SEASON) {
     let e = document.getElementById(idString);

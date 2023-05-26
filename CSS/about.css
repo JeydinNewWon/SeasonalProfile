@@ -16,3 +16,16 @@ body {
 .infocontainer {
     background-color: rgba(255, 115, 154, 0.65);
 }
+
+#effectoption {
+    background-image: url('../assets/sprites/cherry_blossom_2_sprite.png');
+}
+
+#listcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#listcontainer ul {
+    max-width: 45%;
+}

@@ -4,6 +4,7 @@
 @import url('CSS/index/quad2.css');
 @import url('CSS/index/quad3.css');
 @import url('CSS/index/quad4.css');
+@import url('./CSS/loadwrapper.css');
 @import url('./CSS/effects.css');
 
 html, body {
@@ -54,21 +55,5 @@ html, body {
     box-shadow: 0px 5.5px 4.2px rgba(0,0,0,0.38);
 }
 
-#loadwrapper {
-    position: absolute;
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    background-color: navy;
-    height: 100vh;
-    width: 100vw;
-    z-index: 3;
-    font-family: 'Silkscreen', sans-serif;
-    text-align: center;
-    color: white;
-    justify-content: center;
-    font-size: x-large;
-    align-items: center;
-}
+
 

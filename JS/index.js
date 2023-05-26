@@ -1,4 +1,4 @@
-import { eventRegister } from "./eventFuncs.js";
+import { eventRegister } from "./utility/eventFuncs.js";
 
 window.addEventListener("load", () => {
   $('#loadwrapper').fadeOut(2500, () => {

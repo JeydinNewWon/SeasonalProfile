@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('./effects.css');
+@import url('./loadwrapper.css');
 
 body {
     margin: 0;
@@ -55,4 +56,24 @@ body {
 
 .infocontainer p, .infocontainer ul li {
     font-size: 30px;
+}
+
+#effectoption {
+    height: 50px;
+    width: 50px;
+    display: block;
+    background-size: cover;
+}
+
+#effectoptioncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    bottom: 10%;
+    left: 93%;
+    height: 60px;
+    width: 60px;
+    border-radius: 3px;
 }

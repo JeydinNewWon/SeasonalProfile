@@ -1,4 +1,4 @@
-import { random, getRandomStyles } from "./random.js";
+import { random, getRandomStyles } from "../utility/random.js";
 
 const summerLeavesContent = ['./assets/sprites/green_falling_leaf_sprite.png', './assets/sprites/herb_sprite.png', './assets/sprites/flower_sprite.png', './assets/sprites/oak_leaf_sprite.png'];
 

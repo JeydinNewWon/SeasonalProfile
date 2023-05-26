@@ -1,4 +1,4 @@
-import { getRandomStyles, random } from "./random.js";
+import { getRandomStyles, random } from "../utility/random.js";
 
 const cherryBlossomsContent = ['./assets/sprites/cherry_blossom_1_sprite.png', './assets/sprites/cherry_blossom_2_sprite.png', './assets/sprites/cherry_blossom_3_sprite.png'];
 
@@ -16,10 +16,9 @@ export function createBlossoms(num) {
 }
   
 export function removeBlossoms() {
-    setTimeout(() => {
-    const cBlossoms = document.querySelectorAll('.cBlossom');
-    for (const cB of cBlossoms) {
+    let blossoms = document.querySelectorAll('.cBlossom');
+
+    for (const cB of blossoms) {
         cB.remove();
     }
-    }, 200);
 }

@@ -37,6 +37,16 @@
     position: absolute;
 }
 
+.effectcontainerpage {
+    overflow: hidden;
+    transition: opacity 500ms;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: block;
+    border: 1px solid black;
+}
+
 .effectElement {
     position: absolute;
     -moz-user-select: -moz-none;

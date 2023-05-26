@@ -1,4 +1,4 @@
-import { getRandomStyles, random } from "./random.js";
+import { getRandomStyles, random } from "../utility/random.js";
 
 const snowContent = ['&#10052', '&#10053', '&#10054'];
 

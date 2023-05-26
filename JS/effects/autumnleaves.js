@@ -1,4 +1,4 @@
-import { random, getRandomStyles } from "./random.js";
+import { random, getRandomStyles } from "../utility/random.js";
 
 const autumnLeavesContent = ['./assets/sprites/maple_sprite.png', './assets/sprites/fallen_leaf_sprite.png'];
 
