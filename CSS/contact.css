@@ -67,7 +67,16 @@ body {
 
 .hovermsg {
     color: transparent;
+    user-select: none;
+    transition-property: color;
+    transition-delay: 0s, 0s;
+    -webkit-transition-delay: 0s, 0s;
+    -moz-transition-delay: 0s, 0s;
+    -o-transition-delay: 0s, 0s;
+    transition-duration: .4s, .4s;
+    transition-timing-function: ease-in-out;
 }
-#contactscontainer img:hover .hovermsg {
-    display: inline;
+
+#contactscontainer img:hover ~ .hovermsg {
+    color: #fff;
 }

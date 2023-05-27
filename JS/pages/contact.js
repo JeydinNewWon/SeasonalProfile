@@ -19,17 +19,6 @@ window.addEventListener("load", () => {
         $('#loadwrapper').remove();
     });
 
-    const imgs = document.querySelectorAll('#contactscontainer img');
-    for (const img of imgs) {
-        img.addEventListener('mouseenter', () => {
-            img.nextElementSibling.style.color = '#fff';
-        });
-
-        img.addEventListener('mouseleave', () => {
-            img.nextElementSibling.style.color = 'transparent';
-        });
-    }
-
     createSnow(30);
 
     $('#effectoption').on('click', () => {
