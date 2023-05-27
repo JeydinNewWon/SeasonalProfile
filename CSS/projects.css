@@ -32,6 +32,9 @@ body {
 
 .projectcontainer {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;

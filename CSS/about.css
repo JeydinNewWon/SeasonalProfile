@@ -23,6 +23,9 @@ body {
 
 #listcontainer {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     justify-content: center;
 }
 
